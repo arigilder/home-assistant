@@ -162,6 +162,8 @@ class TestJewishCalenderSensor():
             dt(2018, 9, 1, 20, 0),
             {'upcoming_shabbat_candle_lighting': dt(2018, 8, 31, 19, 15),
              'upcoming_shabbat_havdalah': dt(2018, 9, 1, 20, 14),
+             'upcoming_candle_lighting': dt(2018, 8, 31, 19, 15),
+             'upcoming_havdalah': dt(2018, 9, 1, 20, 14),
              'weekly_portion': 'Ki Tavo',
              'hebrew_weekly_portion': 'כי תבוא'}),
         make_nyc_test_params(
@@ -323,7 +325,7 @@ class TestJewishCalenderSensor():
     shabbat_test_ids = [
         "currently_first_shabbat",
         "currently_first_shabbat_with_havdalah_offset",
-        "currently_first_shabbat_bein_hashmashot",
+        "currently_first_shabbat_bein_hashmashot_lagging_date",
         "after_first_shabbat",
         "friday_upcoming_shabbat",
         "upcoming_rosh_hashana",
